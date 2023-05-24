@@ -1,0 +1,42 @@
+<html>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script language="JavaScript">
+    function Login() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+
+        if (user == "admin" && pass == "admin") {
+            location.href = "index.html";
+        } else {
+            alert("Username dan password anda salah!");
+        }
+    }
+</script>
+
+<body>
+    <div class="border h-screen flex">
+        <form class="mx-auto my-auto w-1/2 p-2">
+            <h1 class="mb-10 text-6xl p-5 font-bold text-center"><span class="text-gray-500">Satrio</span> Pratama Store</h1>
+            <div class="w-full border border-black p-2">
+                <table cellpadding="4" class="w-full border border-black">
+                    <tr class="border border-black">
+                        <td class="border border-black w-40">Username</td>
+                        <td class="border border-black"><input class="w-full p-2" type="text" id="username"></td>
+                    </tr>
+                    <tr>
+                        <td class="border border-black ">Password</td>
+                        <td class="border border-black "><input class="w-full p-2" type="text" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="border border-black text-center hover:bg-gray-100 cursor-pointer"
+                            align="right"><input type="button" value="Login" onClick="Login()"></td>
+                    </tr>
+                </table>
+            </div>
+            <h1 class="mb-10 text-4xl font-bold text-center mt-10 text-blue-300">WELCOME</h1>
+        </form>
+    </div>
+</body>
+
+</html>
